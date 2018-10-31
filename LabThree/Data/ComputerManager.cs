@@ -10,14 +10,20 @@ namespace LabThree
     class ComputerManager
     {
         //Computer Hashtable
-        private Hashtable ComputersHashtable = new Hashtable();
+        private Hashtable ComputersHashtable;
         //Dictionary/Hashtable Process
         //key   is name of process
         //value is process
-        private Hashtable ProcessHashtable = new Hashtable();
+        private Hashtable ProcessHashtable;
 
         public string AdminName { get; set; }
         public string AdminPassword { get; set; }
+
+        ComputerManager()
+        {
+            ComputersHashtable = new Hashtable();
+            ProcessHashtable = new Hashtable();
+        }
 
         void AddComputer(Computer c)
         {
