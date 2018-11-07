@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LabThree
 {
+    public delegate void MyDelegate(string name, int ram, double cpuFreq, int cpuCount);
+    public delegate void MyDelegateProcess(string name, string User, double CPU,
+        double Mem, string Path, string Info, int Priority);
     static class Program
     {
         /// <summary>
@@ -18,5 +18,6 @@ namespace LabThree
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
+
     }
 }

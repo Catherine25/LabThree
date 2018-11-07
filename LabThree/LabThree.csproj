@@ -48,6 +48,18 @@
   <ItemGroup>
     <Compile Include="Data\Computer.cs" />
     <Compile Include="Data\Controller.cs" />
+    <Compile Include="dialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogForm.Designer.cs">
+      <DependentUpon>dialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dialogForProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialogForProcess.Designer.cs">
+      <DependentUpon>dialogForProcess.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +70,12 @@
     <Compile Include="Data\ComputerManager.cs" />
     <Compile Include="Data\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="dialogForm.resx">
+      <DependentUpon>dialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialogForProcess.resx">
+      <DependentUpon>dialogForProcess.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
